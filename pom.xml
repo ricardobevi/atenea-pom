@@ -10,7 +10,6 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
-
 	<dependencies>
 
 		<!-- SPRING DEPENDENCIES -->
@@ -58,21 +57,11 @@
 	</dependencies>
 
 
-
-
 	<build>
 
-		<resources>
-			<resource>
-				<directory>src/main/resources</directory>
-				<filtering>true</filtering>
-				<excludes>
-					<exclude>*.xml</exclude>
-					<exclude>*.properties</exclude>
-				</excludes>
-			</resource>
-		</resources>
-
+		<!-- <resources> <resource> <directory>src/main/resources</directory> <filtering>true</filtering> 
+			<excludes> <exclude>*.xml</exclude> <exclude>*.properties</exclude> </excludes> 
+			</resource> </resources> -->
 
 		<plugins>
 
@@ -111,7 +100,14 @@
 					</execution>
 				</executions>
 				<configuration>
+
+					<!-- 
+					<excludes>
+						<exclude>./*.xml</exclude>
+					</excludes>
+					 -->
 					<archive>
+
 						<manifest>
 							<addClasspath>true</addClasspath>
 							<mainClass>${main.class}</mainClass>
@@ -120,7 +116,6 @@
 						<manifestEntries>
 							<Class-Path>conf/</Class-Path>
 						</manifestEntries>
-
 
 					</archive>
 				</configuration>
