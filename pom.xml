@@ -100,7 +100,7 @@
  
 					<excludes>
 						<exclude>*.xml</exclude> 
-						<exclude>**/media/**/*</exclude>
+						<exclude>media/**</exclude>
 					</excludes>
 
 					<archive>
