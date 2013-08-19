@@ -97,14 +97,10 @@
 					</execution>
 				</executions>
 				<configuration>
-
+ 
 					<excludes>
-						<!-- <exclude>**/conf/*</exclude> -->
-						<exclude>**/audio/*</exclude>
-						<exclude>**/history/*</exclude>
-						<exclude>**/history/**/*</exclude>
-						<exclude>**/images/**/.jpg</exclude>
-						<exclude>**/images/**/*.png</exclude>
+						<exclude>*.xml</exclude> 
+						<exclude>**/media/**/*</exclude>
 					</excludes>
 
 					<archive>
